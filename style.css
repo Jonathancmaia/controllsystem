@@ -1,0 +1,311 @@
+body {
+	background-image: url("./images/background.png");
+	overflow-x: hidden;
+}
+
+.section1 {
+	max-height: 80vh;
+	width:  100vw;
+	position: absolute;
+	top: 0;
+	z-index: -2;
+	overflow: hidden;
+	overflow-x: hidden;
+}
+
+.bg-vid {
+	min-width: 100vw;
+	min-height: 100%;
+
+}
+
+.content-container {
+	height: 80vh;
+	position: absolute;
+	top: 0;
+	z-index: -1;
+}
+
+.content-container > .row {
+	height:  50%;
+}
+
+.panel-text{
+	color: rgb(255, 255, 255);
+	overflow: hidden;
+	font-size: 3.5rem;
+	text-shadow: 8px 8px 5px rgb(0, 0, 0, 0.7);
+	color: rgb(255, 255, 255, 0.6); !important;
+	margin-top: -10vh;
+	text-overflow: visible;
+
+}
+
+.panel-text > center {
+	overflow: hidden;
+}
+
+.section2 {
+	height: 30vh;
+	position: absolute;
+	top: 155vh;
+}
+
+.section3 {
+	height: 30vh;
+	position: absolute;
+	top: 195vh;
+}
+
+.section4 {
+	height: 55vh;
+	position: absolute;
+	top: 225vh;
+	line-height: 0.8rem;
+	overflow-x: none;
+}
+
+.section2 > .row, .section3 > .row, .section4 > .row {
+	height: 100%;
+	overflow: visible !important;
+}
+
+h2, h1, h3 {
+	overflow: hidden;
+	text-overflow: visible;
+}
+
+.icon {
+	margin-right: 5px;
+}
+
+.contacts {
+	padding: 20px;
+}
+
+.logo {
+	margin-top: 25vh;
+}
+
+@media (max-width:767px) and (min-width:669px){
+
+	.logo {
+	margin-top: 15vh;
+	}
+}
+
+.panel-text-dif{
+	padding-bottom: 10px;
+}
+
+.navbar-nav, .mr-auto {
+	flex: 1;
+	margin: auto !important;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.tel {
+	text-decoration: none;
+	font-size: 1.5rem;
+}
+
+footer {
+	background-color: rgb(0,0,0,0.3);
+	color: white;
+	position: absolute;
+	top: 365vh;
+	width: 100%;
+}
+
+.marquee {
+    position: absolute;
+    top: 350vh;
+    background-color: rgb(0,0,0,0.3);
+    color:  white;
+}
+
+.video {
+	position: absolute;
+    top: 290vh;
+    background-color: rgb(0,0,0);
+    height: 50vh;
+}
+
+.video > div > div > video {
+    height: 50vh;
+    width: 50vw;
+    margin-left: 25vw;
+}
+
+@-webkit-keyframes rightThenLeft {
+    0%   {left: 0%;}
+    50%  {left: 100%;}
+    100% {left: 0%;}
+}
+
+.marquee > .row {
+	min-height: 6vh;
+}
+
+.aviso {
+	font-size: 2.3rem;
+	animation: pisca 2s infinite alternate;
+}
+
+@keyframes pisca {
+    from { color: red; }
+    to   { color: white; }
+}
+
+.servicos {
+	position: absolute;
+    top: 82vh;
+    background-color: rgb(7,90,190,0.5);
+    color:  white;
+}
+
+.servico-name {
+	font-size: 1.4rem;
+	min-height: 7vh;
+	background-color: rgb(0, 0, 0, 0.5);
+}
+
+.servico-desc {
+	background-color: rgb(0, 0, 0, 0.5);
+	padding: 5px;
+	max-height: 0px;
+	overflow: hidden;
+	transition: 1.5s;
+	transition-timing-function: ease-in-out;
+}
+
+@media screen and (max-width: 767px){
+
+	.section2 {
+		height: 55vh;
+		position: absolute;
+		top: 230vh;
+	}
+
+	.section3 {
+		height: 50vh;
+		position: absolute;
+		top: 290vh;
+	}
+
+	.section4 {
+		height: 80vh;
+		position: absolute;
+		top: 345vh;
+	}
+
+	footer {
+		top: 510vh;
+	}
+
+	.marquee {
+		top: 495vh;
+	}
+
+	.video {
+		position: absolute;
+	    top: 435vh;
+	    background-color: rgb(0,0,0);
+	    height: 50vh;
+	}
+
+	.video > div > div > video {
+	    height: 50vh;
+	    width: 50vw;
+	    margin-left: 25vw;
+	}
+
+	.panel-text{
+		font-size: 2.5rem;
+	}
+
+	.col-md-6{
+		overflow: visible;
+	}
+
+	.navbar-brand{
+		width: 55px;
+	}
+
+	.navbar-brand > img {
+		height: 40px;
+		width: 50px;
+	}
+
+	.servico-name{
+		margin-top: 20px;
+	}
+
+}
+
+.rfid {
+	min-height: 25vh;
+	min-width: 100%;
+	background-image: url('./images/rfid.png');
+	background-size: cover;
+	background-position: center;
+	flex-direction: column;
+	margin-bottom: 10px;
+}
+
+.gasolina {
+	min-height: 25vh;
+	min-width: 100%;
+	background-image: url('./images/gasolina.jpg');
+	background-size: cover;
+	background-position: center;
+	flex-direction: column;
+	margin-bottom: 10px;
+}
+
+.manutencao {
+	min-height: 25vh;
+	min-width: 100%;
+	background-image: url('./images/manutencao.jpg');
+	background-size: cover;
+	background-position: center;
+	flex-direction: column;
+	margin-bottom: 10px;
+}
+
+.caminhao {
+	min-height: 25vh;
+	min-width: 100%;
+	background-image: url('./images/caminhao.jpg');
+	background-size: cover;
+	background-position: center;
+	flex-direction: column;
+	margin-bottom: 10px;
+}
+
+.bloqueador {
+	min-height: 25vh;
+	min-width: 100%;
+	background-image: url('./images/bloqueador.jpg');
+	background-size: cover;
+	background-position: center;
+	flex-direction: column;
+	margin-bottom: 10px;
+}
+
+.rfid:hover .servico-desc,
+.gasolina:hover .servico-desc,
+.manutencao:hover .servico-desc,
+.caminhao:hover .servico-desc,
+.bloqueador:hover .servico-desc {
+	display: inline-block;
+	max-height: 500px;
+	transition: 1.5s;
+	transition-timing-function: ease-in-out;
+}
+
+.footer-link {
+	color: white;
+	text-decoration: none;
+}
